@@ -1,0 +1,60 @@
+Select a data source - Major League Soccer cities and stodiums
+
+BACKEND:
+    Purpose/Functionality: 
+        - Display all the FIFA cities and stodiums on a page
+        - Create form to add sports teams to page
+        - Display individual team on it's own page
+
+    create package.json (npm init -y)
+    express 
+    sequelize
+    express-handlebars
+    *handlebars
+    dotenv
+    pg(postgres)
+    nodemon npm i nodemon--dev--save (dev dependency) //use while you're developing so don't have to stop and restart your server.
+
+
+    Create .gitignore
+
+    Create GitHub Repo
+        (after creating folders you can't clone it so have to make it from vs code. left initialize git repository)
+
+
+    Create database
+        - add schema.sql (drop / create db)
+        - seed: create seed file
+        - connection to db (config:connections)
+
+    Create model
+        Location 
+            city
+            state
+            country
+
+        Team
+            name
+            location_id
+            stodium/venue
+
+        
+    server.js
+
+    Create routes
+        - html routes
+            GET /
+            GET /teams/:teamName
+
+        - api routes
+            POST /api/teams/new-team
+
+
+
+
+FRONTEND:
+    - Create views folder
+        /layouts - main.handlebars
+        all-teams 
+        team
+
